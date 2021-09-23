@@ -82,10 +82,10 @@ def user_menu():
         try:
             login_choose = int(input("Choose... "))  
         except ValueError:
-            print("\nChoose number between 1 - 5\n")
+            print("\nChoose number between 1 - 6\n")
             continue
         if login_choose not in list_of_option:
-            print("\nChoose number between 1 - 5\n")
+            print("\nChoose number between 1 - 6\n")
             continue
         if login_choose == 1:
             db.search_book()
